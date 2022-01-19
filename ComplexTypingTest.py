@@ -12,7 +12,7 @@ Original file is located at
 import requests
 example_txt = 'https://gutenberg.org/files/1661/1661-0.txt'
 book = requests.get(example_txt)
-with open('/content/book.txt', 'wb') as f:
+with open('book.txt', 'wb') as f:
     f.write(book.content)
 
 #@title Select 5 words somewhere in the text

@@ -15,8 +15,8 @@ def typingErrors(prompt_string):
             else:
                 _errors +=1
         else:
-            if iwords[i] == words[i]:
-                if (iwords[i+1] == words[i+1]) & (iwords[i-1] == words[i-1]):
+            if iwords[i] == _words[i]:
+                if (iwords[i+1] == _words[i+1]) & (iwords[i-1] == _words[i-1]):
                     continue
                 else:
                     _errors += 1
